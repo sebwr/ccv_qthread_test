@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cvb-bug"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "cvb_bug"}]
+
+[tool.poetry.dependencies]
+python = "3.9.16"
+cvb = { file = "/opt/cvb-13.04.005/python/cvb-1.4-cp36.cp37.cp38.cp39-abi3-manylinux1_x86_64.whl" }
+numpy = "1.24.1"
+PySide6 = "6.4"
+Pillow = "9.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
